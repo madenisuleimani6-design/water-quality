@@ -1,11 +1,51 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Quality Auth</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <main class="page-shell">
+    <section class="auth-card">
+      <div class="card-header">
+        <h1>Water Quality Portal</h1>
+        <p>Register or login with email, full name, and password.</p>
+      </div>
+
+      <div class="toggle-actions">
+        <button id="show-register" class="toggle-button active" type="button">Register</button>
+        <button id="show-login" class="toggle-button" type="button">Login</button>
+      </div>
+
+      <form id="register-form" class="auth-form active">
+        <label for="register-fullname">Full Name</label>
+        <input id="register-fullname" name="fullName" type="text" placeholder="Jane Doe" required />
+
+        <label for="register-email">Email</label>
+        <input id="register-email" name="email" type="email" placeholder="jane@example.com" required />
+
+        <label for="register-password">Password</label>
+        <input id="register-password" name="password" type="password" placeholder="At least 8 characters" required />
+
+        <button type="submit" class="primary-button">Create Account</button>
+      </form>
+
+      <form id="login-form" class="auth-form">
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" placeholder="jane@example.com" required />
+
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" placeholder="Your password" required />
+
+        <button type="submit" class="primary-button">Login</button>
+      </form>
+
+      <div id="message-box" class="message-box" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

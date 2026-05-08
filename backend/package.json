@@ -1,0 +1,13 @@
+{
+  "name": "water-quality-auth",
+  "version": "1.0.0",
+  "description": "Simple login/signup backend for water-quality frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.4"
+  }
+}
